@@ -3,74 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Demo Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #f4f4f4;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #333;
-            padding: 5px 10px;
-            margin: 0 5px;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-        }
-
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <h1>Welcome to Our Demo Website</h1>
-</header>
-
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-</nav>
-
-<section>
-    <h2>Main Content Area</h2>
-    <p>This is a very basic demo website. You can replace this content with your own.</p>
-</section>
-
-<footer>
-    <p>&copy; 2024 Basic Demo Website. All rights reserved.</p>
-</footer>
-
+    <header>
+        <h1>Recipe Book</h1>
+    </header>
+    <main>
+        <div id="recipes-container">
+            <!-- Recipes will be added dynamically here -->
+        </div>
+        <div id="add-recipe-form">
+            <h2>Add New Recipe</h2>
+            <form id="recipe-form">
+                <label for="recipe-name">Recipe Name:</label>
+                <input type="text" id="recipe-name" required>
+                <label for="recipe-ingredients">Ingredients:</label>
+                <textarea id="recipe-ingredients" required></textarea>
+                <button type="submit">Add Recipe</button>
+            </form>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
